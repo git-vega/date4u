@@ -1,7 +1,7 @@
 package com.tutego.date4u.core;
 
 
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
@@ -9,7 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-@Service
+@Component
 public class FileSystem {
 
     private final Path root = Paths.get(System.getProperty("user.home")).resolve("fs");  // Der gegebene Codeausschnitt erstellt ein Objekt der Klasse Path, das auf ein Verzeichnis im Dateisystem zeigt. Hier ist eine schrittweise Erklärung:
